@@ -17,7 +17,7 @@ const Test = () => {
   return (
     <Container>
       {hello}
-      <button onClick={changeTheme}>Change</button>
+      <button onClick={changeTheme}>Change theme</button>
     </Container>
   )
 }
