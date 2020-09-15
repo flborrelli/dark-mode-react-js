@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { GlobalThemeContext, ThemeManager } from './context/ThemesContext';
-import Test from './components/Test';
+import Header from './components/Header';
 import GlobalStyle from './styles/global';
 import { ThemeProvider } from 'styled-components';
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
-      <Test/>
+      <Header/>
     </ThemeProvider>
     
   );
