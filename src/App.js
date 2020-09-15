@@ -1,14 +1,19 @@
-import React, { useContext } from 'react';
-import { ThemeManager } from './context/ThemesContext';
+import React, { useContext, useState } from 'react';
+import { GlobalThemeContext, ThemeManager } from './context/ThemesContext';
 import Test from './components/Test';
-
+import GlobalStyle from './styles/global';
+import { ThemeProvider } from 'styled-components';
 
 function App() {
 
+  const {theme} = useContext(GlobalThemeContext);
+
   return (
-      <ThemeManager>
-        <Test/>
-      </ThemeManager>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle/>
+      <Test/>
+    </ThemeProvider>
+    
   );
 }
 
