@@ -3,11 +3,12 @@ export default {
 
   //separando em alguns blocos
   colors: {
-    primary: '#c62e65',
+    primary: '#b2a3b5',
     secundary: '#d63af9',
 
     background: '#f5f5f5',
-    text: '#333',
+    text: '#4e5283',
+    header: '#7871aa',
   }
   
 }

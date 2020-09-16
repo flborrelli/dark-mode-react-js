@@ -6,7 +6,6 @@ export const GlobalThemeContext = createContext();
 
 export const ThemeManager = ({ children }) => {
 
-  const [hello, setHello] = useState('oi amigos');
   const [theme, setTheme] = useState(lightTheme);
 
   const changeTheme = () => {
@@ -14,7 +13,7 @@ export const ThemeManager = ({ children }) => {
   }
 
   return (
-    <GlobalThemeContext.Provider value={{ hello, theme, setTheme, changeTheme }}>
+    <GlobalThemeContext.Provider value={{ theme, setTheme, changeTheme }}>
       {children}
     </GlobalThemeContext.Provider>
   );
